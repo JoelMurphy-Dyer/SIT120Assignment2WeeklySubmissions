@@ -1,0 +1,28 @@
+<html>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<body>
+  <h1>Games</h1>
+  <ol>
+    <li>Donkey kong</li>
+    <li>The Legend of Zelda: Majora's Mask</li>
+    <li>Super Mario Bros</li>
+    <li>Crash Bandicoot</li>
+    <li>Spyro</li>
+  </ol>
+    <div id="checkboxtask" class="task2">
+        <input type="checkbox" id="Game 1" value="Game 1" v-model="checkedGames" />
+        <label for="Game 1">Game 1</label>
+        <input type="checkbox" id="Game 2" value="Game 2" v-model="checkedGames" />
+        <label for="Game 2">Game 2</label>
+        <input type="checkbox" id="Game 3" value="Game 3" v-model="checkedGames" />
+        <label for="Game 3">Game 3</label>
+        <input type="checkbox" id="Game 4" value="Game 4" v-model="checkedGames" />
+        <label for="Game 4">Game 4</label>
+        <input type="checkbox" id="Game 5" value="Game 5" v-model="checkedGames" />
+        <label for="Game 5">Game 5</label>
+        <br />
+        <span>Games you want: {{checkedGames}}</span>
+      </div>
+</body>
+<script src="Task2.js"></script>
+</html>
