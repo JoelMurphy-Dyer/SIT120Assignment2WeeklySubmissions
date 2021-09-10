@@ -1,0 +1,28 @@
+<html>
+<head>
+<title> Vue </title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <p>
+    {{ name }} {{ number }}
+    </p>
+
+    <h1 v-html="header">
+        {{ header }}
+    </h1>
+    <p v-html="paragraph">
+        {{ paragraph }}
+    </p>
+    <span v-bind:title="message">
+            If you hover over this message it will display the date you loaded the page
+        </span>
+    <img v-img="image" src="https://images.unsplash.com/photo-1530878955558-a6c31b9c97db?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmljZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80">
+</div>
+
+</body>
+<script src="Task1.js"></script>
+
+</html>
