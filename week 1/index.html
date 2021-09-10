@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Week 1</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!---Week 1 Task-->
+<script src="main.js"></script>
+<link rel="stylesheet" type="text/css" href="tasks.css">
+
+<body>
+
+<!-- Heading one in the webpage, with inline css -->
+<h1 style="color:Blue;">Weekly Pracs</h1>
+  
+<!-- Paragraph one in the wepage -->
+<p1>Hi people</p1>
+
+<!-- Line break -->
+<br>
+
+<!-- Image -->
+<img v-img="image" src="https://irec.org.au/wp-content/uploads/deakin-logo-Keyline.jpg"
+style="width:300px;height:300px;" alt="Deakin logo">
+
+<!-- The table heading -->
+<h2>Three Faculties</h2>
+
+<!-- The table elements -->
+
+<!-- Law faculty -->
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Law Faculty</h2>
+    <p><ul>
+  <li>Judge</li>
+  <li>Trial</li>
+  <li>Prosecution</li>
+</ul> </p>
+  </div>
+  <!-- Science Faculty -->
+  <div class="column" style="background-color:#bbb;">
+    <h2>Science Faculty</h2>
+  <p> <ul>
+  <li>Lab</li>
+  <li>DNA</li>
+  <li>Genetics</li>
+</ul>
+</p>
+  </div>
+  <!-- IT Faculty -->
+  <div class="column" style="background-color:#ccc;">
+    <h2>IT Faculty</h2>
+    <p><ul>
+  <li>Cyber Security</li>
+  <li>Web Design</li>
+  <li>Programming</li>
+</ul>  </p>
+  </div>
+</div>
+
+<!-- Line break -->
+<br>
+
+<!-- Paragraph for the date and time -->
+<p>Click here for the date and time</p>
+
+<!-- The button that displays the date and time -->
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="demo"></p>
+<button type="button" onclick="document.getElementById('count').innerHTML =counter()">Counter</button>
+<p id="count"></p>
+
+<!-- thematic break -->
+<hr>
+
+<!-- A footer which displays the message in italics -->
+<footer>
+<p style ="font-style:italic;">Website made by Joel</p>
+</footer>
+</body>
+</html>
