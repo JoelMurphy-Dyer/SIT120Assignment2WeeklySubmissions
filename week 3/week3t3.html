@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<p>Clock from midnight January 1, 1970.</p>
+
+<p>CLick the button to see the number of milliseconds it has been since midnight of January 1st, 1970.</p>
+
+<button onclick="myFunction()">Click to see</button>
+
+<p id="time"></p>
+
+<script>
+function myFunction() {
+    var d = new Date();
+    var n = d.getTime();
+    document.getElementById("time").innerHTML = n;
+}
+</script>
+</body>
+</html>
+
