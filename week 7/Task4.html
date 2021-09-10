@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Week 7 task 4</title>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<link rel="stylesheet" href="Task4.css">
+<body>
+
+    <div id="namedslots">
+        <section class="hero is-fullheight is-warning is-bold">
+          <div class="slots-body">
+            <div class="container">
+              <h2 class="title is-1">{{ title }}</h2>
+              <h1 class="subtitle is-3">{{ subtitle }}</h1>
+
+             <child-component>
+               <p slot="bottom">Enjoy this food</p>
+               <p>What would like?</p>
+               <p slot="top">Good choice!!</p>
+             </child-component>
+             
+             <child-component></child-component>
+            </div>
+          </div>
+       </section>
+     </div>
+     
+     <script type="text/x-template" id="child-component">
+       <div>
+       
+         <slot name="top">
+         </slot>
+       
+    
+         <slot>
+           <p>Enjoy :)</p>
+         </slot>
+        
+         <slot name="bottom">
+         </slot>
+       </div>
+     </script>
+
+</body>
+
+<script src="Task4.js"></script>
+</html>
