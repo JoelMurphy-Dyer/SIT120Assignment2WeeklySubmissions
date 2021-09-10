@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Cherry Cream Soda;
+}
+/* Body of the page */
+html, body{
+    height: 10%;  
+    background: #f2f2f2;
+}
+/* This is the style of the footer on how far it appears on the page */
+#cont{
+    min-height: 10%;
+    background: #f2f2f2;
+    display: none;
+} 
+/* This is also the style for the footer but just adds a overlay and padding */
+#main{
+    overflow: auto;
+    padding-bottom: 100px;
+}
+/* This is the footer box style */
+#footer{
+    background-color: #1e232b;
+    padding: 5 5 0 5;
+    position: relative;
+    height: 100px;
+    clear: both;
+}
+/* This is the styling for the content inside of the footer e.g., Phone, envelope and map */
+#footer .content{
+    margin: 5px;
+    color: white;
+    padding: 5 5 0 5;
+    font-size: 13px;
+    text-align: center;
+}
+/* This is the text styling for the copyright text in html it is the <p> tag */
+#footer p{
+    color: white;
+    font-size: 10;
+    padding: 5 5 0 5;
+    text-align: center;
+}
+/* This is the button styling for the cart */
+.button{
+    width: 3rem;
+    height: 1.2rem;
+    cursor: pointer;
+    margin: .5rem;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Styling for the cart text and the colour*/
+.cart{
+    background: #fff;
+    border-radius: 1rem;
+    color: #fdbb2d;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    border: .2rem solid;
+}
+/* This is the cart image styled */
+.cart i{
+    position: absolute;
+    margin-left: 2.5rem;
+    column-fill: transparent;
+    transition: 400ms;
+    color: transparent;
+}
+/* The trsnsition when you put your mouse over the "add to cart" text */
+.cart span{
+    transition: 400ms;
+}
+/* Styling how much the text moves to the right when hovered over */
+.cart:hover span{
+    margin-right: 1.8rem;
+}
+/* Styling for what the cart image does when the mouse hovers over it */
+.cart:hover i{
+    margin-left: 2.2rem;
+    column-fill: white;
+    color: #fdbb2d;
+}
+/* The focus on when you hover your mouse over the button */
+button:focus{
+    outline: none;
+}
+/* The background gradient of the menu */
+.menu{
+    background: linear-gradient(rgba(255,255,255,.7),rgba(255,255,255,.7)) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* This is the position of the page */
+.menu .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+/* .box is referencing its own box inside the page, it is the menu box */
+.menu .box-container .box{
+    background: #fff;
+    width: 35rem;
+    padding: 2rem;
+    margin: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem .5rem rgba(0,0,0,.2);
+    text-align: center;
+}
+/* This is the possitioning of the image in the .box */
+.menu .box-container .box img{
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+/* This is the styling of the heading in the menu boxes  */
+.menu .box-container .box h3{
+    color: #333;
+    font-size: 3rem;
+    font-weight: normal;
+}
+/* This is the styling of the paragraph in the box */
+.menu .box-container .box p{
+    color: #333;
+    font-size: .9rem;
+    font-weight: normal;
+}
+/* The positioning and colour of the stars in the menu box */
+.menu .box-container .box .stars{
+    color: #ffaa4a;
+    font-size: 2rem;
+    padding: 1rem .1rem;
+}
+/* The colour and font size of the price shown in the boxes */
+.menu .box-container .box .price{
+    color: #666;
+    font-size: 2.5rem;
+}
+/* This adds a hover effect when you go over the menu box with a nice shadow effect */
+.menu .box-container .box:hover{
+    transform: scale(1.02);
+    box-shadow: 0 1rem 1rem rgba(0,0,0,.2);
+}
+/* This is the media for when it in 500px */
+@media (max-width: 500px){
+
+/* This changes the font size in this media view */
+    html{
+        font-size: 50%; 
+    }
+
+/* This is the padding for all the components */
+section{
+    padding: 1rem 5%;
+    padding-top: 8.5rem;
+  }
+}

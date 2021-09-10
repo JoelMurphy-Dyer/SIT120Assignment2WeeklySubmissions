@@ -1,0 +1,183 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Menu</title>
+
+        <!-- Linking all the stylesheets and javascript pages -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cherry+Cream Soda&display=swap">
+        <link rel="stylesheet" href="Task2.css">
+        <link rel="stylesheet" href="Task2.1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script rel="stylesheet" src="https://kit.fontawesome.com/b1733a25f4.js"></script>
+    </head>
+
+    <!-- This is the navigation bar and it includes the bar symbol in when the screen is minimized -->
+<body>
+    <nav>
+        <div class="menu-icon"><span class="fas fa-bars"></span></div>
+        <div class="logo">Disney Foods</div>
+        <div class="nav-items">
+    <!--- This links all the pages together it is the options in the navigation bar --->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="feedback.html">Contact Page</a></li>
+            <li><a href="#">Cart</a></li>
+        </div>
+
+     <!--- This is the search icon--->
+        <div class="search-icon"><span class="fas fa-search"></span></div>
+        <div class="cancel-icon"><span class="fas fa-times"></span></div>
+        <form action="#">
+            <input type="search" class="search-data"  placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+        </form>
+      <!-- Javascript on opening and closing the hamburger button and search icon -->
+        <script>
+            const menuBtn = document.querySelector(".menu-icon span");  
+              const searchBtn = document.querySelector(".search-icon");
+              const cancelBtn = document.querySelector(".cancel-icon");
+              const items = document.querySelector(".nav-items");
+              const form = document.querySelector("form");
+        menuBtn.onclick = ()=>{
+             items.classList.add("active");
+             menuBtn.classList.add("hide");
+             searchBtn.classList.add("hide");
+             cancelBtn.classList.add("show");
+            }
+        cancelBtn.onclick = ()=>{
+             items.classList.remove("active");
+             menuBtn.classList.remove("hide");
+             searchBtn.classList.remove("hide");
+             cancelBtn.classList.remove("show");
+             form.classList.remove("active");
+             cancelBtn.style.color = "#add8e6";
+            }
+        searchBtn.onclick = ()=>{
+             form.classList.add("active");
+             searchBtn.classList.add("hide");
+             cancelBtn.classList.add("show");
+            }
+            </script>
+            </nav>
+            
+<!--- This is all the code for the menu tab of the website --->
+<section class="menu" id="menu">
+
+<!-- This is the heading of the menu page -->
+<h1 class="heading"> Disney Foods <span>menu</span> </h1> 
+
+  <!-- The boxes are classed as "box-container" -->
+<div class="box-container">
+
+  <!-- This is the first image in the menu -->
+    <div class="box">
+  <!-- This is the gif in the first item -->
+          <img class="image" src="images/pasta.gif" alt="">
+        <!-- h3 is the heading of the first item and <p> is the paragraph explaining the item -->   
+          <h3>Remy’s Ratatouille (V)</h3>
+          <p>Remy’s Ratatouille, this iconic food moment where the undefeated food critic, Anton Ego, is transported back to his childhood, is remembered by everyone. The uniqueness of the dish and the piquant flavor comes from the nature of the dish, which is a vegetable stew, giving out the flavors of every vegetable and herbs, along with a simmering and creamy texture.</p>
+        <!-- These are the images of the stars displayed  -->
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <!-- Price shown -->
+          <div class="price">$15</div>
+
+      <!--- This is the cart that shows up when you hover over add to cart --->
+        <button
+            class="cart">
+            <span>add to cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </button>
+        </div>
+
+  <!--- This is the second image in the menu --->
+    <div class="box">
+      <!-- This is the gif in the second item -->
+            <img src="images/alice cookies.gif" alt="">
+      <!-- h3 is the heading of the first item and <p> is the paragraph explaining the item -->   
+            <h3>Eat Me Cookies from “Alice In The Wonderland” (V)</h3>
+            <p>The magical cookies from Alice in Wonderland that let Alice grow in size.</p>
+      <!-- These are the images of the stars displayed  -->
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+      <!-- Price shown -->
+            <div class="price">$12</div>
+      <!--- This is the cart that shows up when you hover over add to cart --->
+            <button
+            class="cart">
+            <span>add to cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </button>
+          </div>
+
+  <!--- This is the third image in the menu --->
+    <div class="box">
+      <!-- This is the gif in the third item -->
+        <img src="images/Incredibles waffles.gif" alt="">
+      <!-- h3 is the heading of the first item and <p> is the paragraph explaining the item --> 
+        <h3>Bob's amazing waffles (V)</h3>
+        <p>When you need a meal for the kids this is the perfect main. You can always trust Bob's waffles to make the kids happy.</p>
+      <!-- These are the images of the stars displayed  -->
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      <!-- Price shown -->
+        <div class="price">$12</div>
+<!--- This is the cart that shows up when you hover over add to cart --->
+        <button
+            class="cart">
+            <span>add to cart</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+</section>
+
+<!-- This is the block id's for the footer -->
+<div id="cont">
+  <div id="main">
+  </div>
+</div>
+
+<!--- This is the html for the footer--->
+<footer id="footer">
+  <div class="center box">
+
+<!-- This is the map icon and the information -->
+      <div class="content">
+      <div class="Place">
+      <span class="fas fa-map-marker-alt"></span>
+      <span class="text">Disney Foods, Australia</span>
+  </div>
+<!-- The phone logo and number in the footer -->
+      <div class="Phone">
+      <span class="fas fa-phone-alt"></span>
+          <span class="text">+0444444444</span>
+</div>
+<!-- Email logo and infromation in the footer -->
+  <div class="Email">
+  <span class="fas fa-envelope"></span>
+  <span class="text">DisneyFoods@disneyfoods.com</span>
+</div>
+</div>
+</div>
+<!-- Copyright logo and content in the footer -->
+<p>DisneyFoods.com | Designed by Joel Murphy-Dyer &copy; 2021</p>
+</footer>
+</body>
+</html>
