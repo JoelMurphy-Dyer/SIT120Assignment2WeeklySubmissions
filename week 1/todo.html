@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<section id='app'>
+    <h1>{{title}}</h1>
+    <div v-for="todoItems in todoLists">
+    <input class ="checkitem"
+        type="checkbox"
+        v-on:change="toggleItems(todoItems)"
+        v-bind:checked="todoItems.checked"
+        />
+    <del class="light" v-if="todoItems.checked">
+      {{todoItems.text}}
+    </del>
+    <span v-else>
+      {{todoItems.text}}
+    </span>
+</div>
+</section>
+
+<script src="https://unpkg.com/vue@next"></script>
+<script src="todo.js"></script>
+<link rel="stylesheet" href="todo.css">
+</body>
+</html>
+
